@@ -2,11 +2,11 @@
 	"name": "Mitre-Viewer",
 	"versions": {
 		"attack": "8",
-		"navigator": "4.0",
-		"layer": "4.0"
+		"navigator": "4.2",
+		"layer": "4.1"
 	},
 	"domain": "enterprise-attack",
-	"description": "",
+	"description": "Andamento Controles NEON",
 	"filters": {
 		"platforms": [
 			"Linux",
@@ -29,7 +29,28 @@
 		"showName": true
 	},
 	"hideDisabled": false,
-	"techniques": [],
+	"techniques": [
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"score": 33,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.002",
+			"tactic": "persistence",
+			"score": 33,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		}
+	],
 	"gradient": {
 		"colors": [
 			"#ff6666",
@@ -41,8 +62,8 @@
 	},
 	"legendItems": [],
 	"metadata": [],
-	"showTacticRowBackground": false,
+	"showTacticRowBackground": true,
 	"tacticRowBackground": "#dddddd",
-	"selectTechniquesAcrossTactics": true,
+	"selectTechniquesAcrossTactics": false,
 	"selectSubtechniquesWithParent": false
 }
